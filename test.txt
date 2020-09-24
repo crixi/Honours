@@ -1,2 +1,0 @@
-Hello there, this is a test.
-And this is the first change to be committed. test.
