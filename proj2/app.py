@@ -1,9 +1,9 @@
-from flask import Flask, url_for,req
+from flask import Flask, url_for
 app = Flask(__name__)
 
-@app.route("/",req)
+@app.route("/")
 def hello ():
-    return("Hello Napier"+req.method)
+    return("Hello Napier")
 
 @app.route('/static/img')
 def static_example_img():
