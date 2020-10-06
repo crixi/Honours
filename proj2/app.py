@@ -1,9 +1,9 @@
-from flask import Flask, url_for
+from flask import Flask, url_for,req
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("/",req)
 def hello ():
-    return "Hello Napier"
+    return("Hello Napier"+req.method)
 
 @app.route('/static/img')
 def static_example_img():
@@ -14,3 +14,6 @@ def static_example_img():
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True)
+
+
+
