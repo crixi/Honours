@@ -6,7 +6,12 @@
 	</head>
         <body>
                 <h1>Find the matching icon:</h1>
+		<span class="material-icons"i>change_history</span>
                 <h2>With a subtitle</h2>
+		<ul>
+			{% for item in list%}
+			<li>{{item}}</li>
+		</ul>
 		<span class="material-icons">change_history</span>
 		<span class="material-icons">favorite_border</span>
 		<i class="material-icons md-48">face</i>

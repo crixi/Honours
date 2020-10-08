@@ -3,10 +3,17 @@ app = Flask(__name__)
 
 @app.route("/account/",methods=['POST','GET'])
 def account():
+    list=[
+'static/triangle.png','static/heart.png
+            ]
+<span class="material-icons">
+favorite_border
+</span>
+            ]
     if request.method == 'POST':
         print (request.form)
         name = request.form['name']
-        return "Hello %s" %name+render_template ('base.html')
+        return "Hello %s" %name + render_template ('base.html')
     else:
         page ='''
         <html><body>
