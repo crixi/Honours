@@ -1,15 +1,11 @@
 from flask import Flask, request, render_template
 app = Flask(__name__)
 
-@app.route("/account/",methods=['POST','GET'])
+@app.route("/",methods=['POST','GET'])
 def account():
     list=[
-'static/triangle.png','static/heart.png
-            ]
-<span class="material-icons">
-favorite_border
-</span>
-            ]
+('static/triangle.png'),('static/heart.png') ]
+
     if request.method == 'POST':
         print (request.form)
         name = request.form['name']
