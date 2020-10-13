@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, redirect, url_for
 app = Flask(__name__)
 
 @app.route("/",methods=['POST','GET'])
@@ -10,7 +10,9 @@ def account():
         print (request.form)
         name = request.form['name']
         city = request.form['city']
-        return"Hello %s" %name +"\n" + "in %s" %city + render_template ('base.html')
+        return redirect(url_for('first'))
+   # "Hello %s" %name +"\n" + "in %s" %city + render_template ('base.html')
+    
 
 
     else:
@@ -26,7 +28,11 @@ def account():
         </form>
         </body></html>'''
         
-        return page
+        return page, 200
+
+@app.route("/first",methods=['POST','GET'])
+def first():
+    return "Hello"
 
     if __name__ == "__main__":
         app.run(host='0.0.0.0', debug=True)
