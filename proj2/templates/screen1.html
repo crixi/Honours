@@ -1,33 +1,20 @@
 <html>
         <head>
                 <title>Template Inheritance Example</title>
-                <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-                 rel="stylesheet">	
+                <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<script type="text/javascript" src="../static/js/myscripts.js"></script>
 	</head>
         <body>
                 <h1>Find the matching icon:</h1>
-		<span class="material-icons"i>change_history</span>
+		<img src="/static/triangle.png"/>
                 <h2>With a subtitle</h2>
 		<form action="/scndScreen">
  			
-			<img src="/static/triangle.png"/>
+			<img src="/static/triangle.png" onclick="nextScreen()" />
 			<img src="/static/heart.png"/>
 			<img src="/static/up_arrow.png"/>
 			<img src="/static/square.png"/>
- 			 <label for="vehicle1">
-				 <span class="material-icons" >change_history</span>
-			 </label>
-		
-			 <br>
- 			 
- 			 <label for="vehicle2">
-				 <span class="material-icons">favorite_border</span>
-			 </label>
-			 <br>
- 			 
- 			 <label for="vehicle3">
-				 <span class="material-icons md-48">face</span>
-			 </label>
+ 			
 			 <br>
 			 <br>
 			 <input type="submit" value="Submit">
