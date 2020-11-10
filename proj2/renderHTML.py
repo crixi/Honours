@@ -15,36 +15,7 @@ def account():
         <head>
             <link href="/static/css/cssWelcome.css" rel="stylesheet"/>
             <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
-            <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
-            <style>
-            body{
-            background-color:#A2B6E4;
-padding-left: 20%;
-padding-right:20%;
-            }
-            .welcomeTitle{
-                 height:300px;
-                 position:relative;
-                 }
-            .title{
-            color:#3354A0;
-            font-size:2em;
-            font-color:37559C;
-            font-family:'Leckerli One', cursive;
-            text-align:center;
-            width:100%;
-            position:absolute;
-                top:30%;
-                 }
-                 label{
-font-family:'Itim',cursive;
-font-size: 30px;
-                }
-                #submit{
-font-family:'Itim',cursive;
-
-                 }
-            </style>
+            <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">           
         </head>
         <body>
             <div class="container-fluid welcomeTitle" >
