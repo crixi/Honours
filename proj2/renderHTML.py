@@ -13,29 +13,37 @@ def account():
         page ='''
         <html>
         <head>
-            <link href="/static/css/cssWelcome.css" rel="stylesheet"/>
+            <meta charset="utf-8">
+            <meta name=""viewport" content="width=device-width, initial-scale=1.0">
             <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">           
+            <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+            <link href="/static/css/cssWelcome.css" rel="stylesheet"/>
+            
+        
         </head>
         <body>
-            <div class="container-fluid welcomeTitle" >
-                <div class="row title">
+            <div class="container-fluid" >
+                <div class="row">
                 <h2 class="title">Welcome to Shappy!</h2>
                 </div>
-            </div
-            <div class="container">
+            </div>
+            <div class="container-fluid">
                 <div class="row">
+                <div class="col-sm-2">
+                </div>
+                <div class="col-sm-8">
                 <form action="" method="post" name="form">
                 <label for="name">What is your name?</label>
                 <input type="text" name="name" id="name"/>
-                </div>
-                <div>
+                <br>
                 <label for="city">What is the name of your city?</label>
                 <input type="text" name="city" id="city"/>
+                <br>                
+                <button class="button" type="submit">Let's play!</button>
                 </div>
-                <br>
-                <div>
-                <input type="submit" name="submit" id="submit"/>
+                <div class="col-sm-2">
+                </div>
                 </form>
                 </div>
             </div>

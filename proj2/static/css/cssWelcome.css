@@ -1,26 +1,40 @@
 body{
-background-color:#A2B6E4;
+background-color:#FFB482;
 padding-left: 20%;
 padding-right:20%;
 }
-.welcomeTitle{
-height:300px;
-position:relative;
-}
+
 .title{
             color:#3354A0;
-            font-size:2em;
+            font-size:7em;
             font-color:37559C;
             font-family:'Leckerli One', cursive;
             text-align:center;
             width:100%;
-            position:absolute;
-                top:30%;
-                 }
-                 label{
+	    padding-top:10%;
+            padding-bottom:10%;
+    }
+	    label{
 font-family:'Itim',cursive;
 font-size: 30px;
                 }
-                #submit{
-font-family:'Itim',cursive;
-                 }
+
+		input{
+		margin:20px 50px;
+		border-radius:7px;
+		height:40px;
+		}
+
+	       .button{
+	       font-family:'Itim', cursive;
+	       background-color:37559C;
+	       color:white;
+	       font-size:40px;
+	       cursor:pointer;
+	       margin:50px auto;
+	       display:block;
+	       padding:20px;
+	       text-align:center;
+	       border-radius:50px;
+
+	       }	
