@@ -1,0 +1,13 @@
+body{
+background-color:#FFB482;
+margin:5% 10%;
+}
+
+h1{
+font-size:7em;
+font-family:'Leckerli One', cursive;
+}
+
+/*icon sizing*/
+
+.material-icons.md-200 { font-size:200px; }

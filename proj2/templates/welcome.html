@@ -1,13 +1,19 @@
 <html>
         <head>
                 <title>Welcome message</title>
-        </head>
+                <meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../static/css/cssWelcome.css" rel="stylesheet"/>
+	</head>
         <body>
-                <h1>Are you ready for your adventure?</h1>
-                <h2>This will be packed with colours and beautiful shapes!</h2>
+		<h1 class="title">Hello {{ name }} from {{ city }}</h1>
+                <h1 class="title">Are you ready for your adventure?</h1>
+                
 	<form action="/fstScreen" method="post" name="form">
              
-             <input type="submit" name="submit" id="submit"/>
+	<button class="button" type="submit">Yes!</button>
         </form>
                 
         </body>

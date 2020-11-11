@@ -8,7 +8,9 @@ def account():
         print (request.form)
         name = request.form['name']
         city = request.form['city']
-        return "Hello %s" %name + render_template('welcome.html')
+
+        return render_template('welcome.html',name=name,city=city)
+        
     else:
         page ='''
         <html>
