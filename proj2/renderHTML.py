@@ -32,9 +32,9 @@ def account():
             </div>
             <div class="container-fluid">
                 <div class="row">
-                <div class="col-sm-2">
+                <div class="col-sm-3">
                 </div>
-                <div class="col-sm-8">
+                <div class="col-sm-6">
                 <form action="" method="post" name="form">
                 <label for="name">What is your name?</label>
                 <input type="text" name="name" id="name"/>
@@ -44,7 +44,7 @@ def account():
                 <br>                
                 <button class="button" type="submit">Let's play!</button>
                 </div>
-                <div class="col-sm-2">
+                <div class="col-sm-3">
                 </div>
                 </form>
                 </div>
