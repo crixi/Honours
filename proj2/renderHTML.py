@@ -1,6 +1,6 @@
-from flask import Flask, request, render_template, redirect, url_for
+from flask import Flask, request, render_template, redirect, url_for, flash
 app = Flask(__name__)
-
+app.secret_key='12345'
 
 @app.route("/",methods=['POST','GET'])
 def account():
@@ -52,8 +52,9 @@ def account():
         </body>
         </html>'''
 
-        return page,200
+        return page, 200
     
+
 
 @app.route("/fstScreen", methods=['POST','GET'])
 def firstScreen():
@@ -66,3 +67,4 @@ def secondScreen():
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True)
+
