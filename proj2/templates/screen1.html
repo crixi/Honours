@@ -9,7 +9,9 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 		<link href="../static/css/cssScreen.css" rel="stylesheet"/>
-		
+<style>
+
+</style>
 	</head>
         <body>
 		<div class="container-fluid">
@@ -24,20 +26,33 @@
 				<i class="material-icons md-200">change_history</i>		
 			</div>
 			<div class="col-md-8">
+				<div class="col-md-4">
 					<a href="scndScreen">
 					<i class="material-icons md-200 ">change_history</i>
 					</a>
-					<a href="#"
-					<i class="material-icons md-200">favorite</i>
+					<a href="#">
+					<i class="material-icons md-200" onclick="popUp()">favorite</i>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a href="#">
+					<i class="material-icons md-200" onclick="popUp()">arrow_right_alt</i>
 					</a>
 					<a href="#">
-					<i class="material-icons md-200">arrow_right_alt</i>
+					<i class="material-icons md-200" onclick="popUp()">crop_din</i>
 					</a>
-					<a href="#">
-					<i class="material-icons md-200">crop_din</i>
-					</a>
+					
+				</div>
+				</div>
 			</div>
+			<div class="row">
+				<p id="mypopup"></p>
 			</div>
 		</div>	 
+	<script>
+		function popUp(){
+			document.getElementById("mypopup").innerHTML = "Oops, try again!";
+			}
+	</script>
 	</body>
 </html>
