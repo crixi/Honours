@@ -14,7 +14,11 @@ font-family:'Leckerli One', cursive;
 font-size:200px; 
 }
 
-a, a:hover, a:visited, a:active{
-color:inherit;
+a:-webkit-any-link{
 text-decoration:none;
+color:inherit;
+}
+
+.blocks{
+display:inline;
 }
