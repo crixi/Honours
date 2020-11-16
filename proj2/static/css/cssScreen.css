@@ -6,6 +6,11 @@ margin:5% 10%;
 h1{
 font-size:7em;
 font-family:'Leckerli One', cursive;
+background-image: linear-gradient(to left, orange, white);
+-webkit-background-clip:text;
+-moz-background-clip:text;
+background-clip:text;
+color:transparent;
 }
 
 /*icon sizing*/
@@ -21,7 +26,9 @@ color:inherit;
 
 p{
 font-size:3em;
-background-color:red;
-
+background-color:#ff5454;
 text-align:center;
+border-radius:10px;
+width:50%;
+margin:80px auto;
 }
