@@ -1,11 +1,61 @@
 <html>
         <head>
-                <title>Screen2</title>
-        </head>
-        <body>
-                <h1>Second screen!</h1>
-                
+                <title>Template Inheritance Example</title>
+                <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.5/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../static/css/cssScreen.css" rel="stylesheet"/>
+<style>
 
-                
-        </body>
-<html>
+</style>
+	</head>
+        <body>
+		<div class="container-fluid">
+			<div class="row">
+				<h1>2. Triangles</h1>
+				<h2>Find the match</h2>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+			<div class="col-md-4">
+				<span class="material-icons md-200">change_history</span>		
+			</div>
+			<div class="col-md-8">
+				<div class="col-md-4">
+					<a href="scndScreen">
+					<i class="material-icons md-200 ">change_history</i>
+					</a>
+					<a href="#">
+					<i class="material-icons md-200" onclick="popUp()">favorite</i>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a href="#">
+					<i class="material-icons md-200" onclick="popUp()">arrow_right_alt</i>
+					</a>
+					<a href="#">
+					<i class="material-icons md-200" onclick="popUp()">crop_din</i>
+					</a>
+                                        <a href="#">
+					<span class="material-icons md-200">change_history</span>
+					</a>
+					
+				</div>
+				</div>
+			</div>
+			<div class="row">
+				<p id="mypopup"></p>
+			</div>
+		</div>	 
+	<script>
+		function popUp(){
+			document.getElementById("mypopup").innerHTML = "Oops, try again!";
+			}
+	</script>
+	</body>
+</html>
