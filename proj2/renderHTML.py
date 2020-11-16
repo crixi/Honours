@@ -65,6 +65,10 @@ def firstScreen():
 def secondScreen():
     return render_template('screen2.html')
 
+@app.route("/thrdScreen",methods=['POST','GET'])
+def thirdScreen():
+    return render_template('screen3.html')
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True)
 

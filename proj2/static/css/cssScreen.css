@@ -19,6 +19,10 @@ color:transparent;
 font-size:200px; 
 }
 
+.material-icons.blue{
+color:blue;
+}
+
 a:-webkit-any-link{
 text-decoration:none;
 color:inherit;
