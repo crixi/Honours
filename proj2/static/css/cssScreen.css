@@ -23,6 +23,12 @@ font-size:200px;
 color:blue;
 }
 
+.material-icons.md-light{
+color:rgba(255.255.255.1);
+background-color:black;
+}
+
+
 a:-webkit-any-link{
 text-decoration:none;
 color:inherit;
