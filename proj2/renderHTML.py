@@ -69,6 +69,10 @@ def secondScreen():
 def thirdScreen():
     return render_template('screen3.html')
 
+@app.route("/endSerie",methods=['POST','GET'])
+def EndOfSerie():
+    return render_template('endSerie.html')
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True)
 
